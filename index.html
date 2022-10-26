@@ -457,7 +457,7 @@
     <!--modal-->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <h2>Залиште свої дані, ми вам передзвонимо</h2>
+        <h2 class="form-header">Залиште свої дані, ми вам передзвонимо</h2>
         <!--input type="text" />
         <input type="phone" />
         <input type="email" />
@@ -467,14 +467,21 @@
         </p-->
         <!-- autocomplete="on" novalidate-->
         <form class="main-form" action="#" name="contact-form">
-          <label for="person-name">Ім'я</label>
+          <label class="form-label" for="person-name">Ім'я</label>
           <input id="person-name" type="text" name="person-name" />
-          <label for="person-phone">Телефон</label>
+          <label class="form-label" for="person-phone">Телефон</label>
           <input id="person-phone" type="phone" name="person-phone" />
-          <label for="person-email">Пошта</label>
+          <label class="form-label" for="person-email">Пошта</label>
           <input id="person-email" type="email" name="person-email" />
-          <label for="person-comment">Коментар</label>
-          <input id="person-comment" cols="30" rows="10" type="comment" name="person-comment" />
+          <label class="form-label" for="person-comment">Коментар</label>
+          <textarea
+            class="person-comment"
+            id="person-comment"
+            cols="30"
+            rows="10"
+            type="comment"
+            name="person-comment"
+          ></textarea>
         </form>
         <button type="button" class="modal-close-button" data-modal-close>
           <svg class="modal-close-button-icon">

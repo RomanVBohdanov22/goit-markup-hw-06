@@ -819,17 +819,29 @@ img {
   border-radius: 4px;
   background-color: var(--white-bg);
 
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  padding-bottom: 0;
+  padding-left: 41px;
+  padding-right: 39px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 .modal .main-form {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  gap: 10px;
+  /*gap: 10px;*/
   /*justify-content: auto;*/
+}
+.form-header {
+  font-size: 20px;
+}
+.modal .form-label {
+  font-size: 12px;
+  display: block;
+}
+.person-comment {
+  width: 100%;
+  height: 120px;
+  resize: none;
 }
 .modal .modal-text {
   position: relative;
