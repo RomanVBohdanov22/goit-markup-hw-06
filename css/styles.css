@@ -832,16 +832,29 @@ img {
   /*justify-content: auto;*/
 }
 .form-header {
+  margin-top: 0;
+  margin-bottom: 12px;
   font-size: 20px;
 }
 .modal .form-label {
+  margin-top: 0;
+  margin-bottom: 4px;
   font-size: 12px;
   display: block;
 }
 .person-comment {
+  margin-top: 0;
+  margin-bottom: 10px;
   width: 100%;
   height: 120px;
   resize: none;
+}
+.form-input {
+  margin-top: 0;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 40px;
+  padding: 12px 12px 12px 32px;
 }
 .modal .modal-text {
   position: relative;
@@ -850,6 +863,10 @@ img {
   /*z-index: 1;*/
   width: 120px;
   /*outline: orange 2px dotted;*/
+}
+.submit-button {
+  width: 200px;
+  height: 50px;
 }
 .modal .modal-close-button {
   position: absolute;
