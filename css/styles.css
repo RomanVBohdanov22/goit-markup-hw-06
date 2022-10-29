@@ -857,18 +857,31 @@ img {
   height: 40px;
   padding: 12px 12px 12px 32px;
 }
-.modal .modal-text {
+/*.modal .modal-text {
   position: relative;
   top: 8px;
   left: 8px;
-  /*z-index: 1;*/
-  width: 120px;
-  /*outline: orange 2px dotted;*/
-}
+  width: 120px;}
+*/
 .submit-button {
+  position: relative;
+  left: calc(100% / 2 - 100px);
+  display: inline-block;
   width: 200px;
   height: 50px;
+  border-radius: 4px;
+  border: none;
   /*align-items: center;*/
+  color: var(--whitetxt);
+  background-color: var(--bluebtn);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  box-shadow: 0px 4px 4px var(--button-to-order-box-shadow-color);
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
 }
 .modal .modal-close-button {
   position: absolute;
