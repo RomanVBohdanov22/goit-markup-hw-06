@@ -480,15 +480,19 @@
             name="person-comment"
             placeholder="Введіть текст"
           ></textarea>
-          <input
-            class="agree-label-icon visually-hidden"
-            id="terms-checkbox"
-            type="checkbox"
-            name="terms-checkbox"
-          />
-          <label class="agree-label" for="terms-checkbox"
-            >Погоджуюся з розсилкою та приймаю <a href="#">Умови договору</a>
-          </label>
+          <div class="agree-check-block">
+            <!--visually-hidden-->
+            <input
+              class="agree-label-icon"
+              id="terms-checkbox"
+              type="checkbox"
+              name="terms-checkbox"
+            />
+            <label class="agree-label" for="terms-checkbox"
+              >Погоджуюся з розсилкою та приймаю
+              <a class="agree-label-link" href="#">Умови договору</a>
+            </label>
+          </div>
 
           <button class="submit-button" type="submit">Відправити</button>
         </form>
