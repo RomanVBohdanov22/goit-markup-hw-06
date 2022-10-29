@@ -845,6 +845,9 @@ img {
   text-align: center;
 }
 .modal .form-label {
+  position: relative;
+  /*left: 0;*/
+  /*top: -4px;*/
   margin-top: 0;
   padding: 0;
   margin-bottom: 4px;
@@ -855,6 +858,20 @@ img {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
+}
+.form-label .person-name-icon {
+  /*position: relative;*/
+  margin: 0;
+  position: absolute;
+  top: calc(50% + 2px);
+  transform: translateY(-50%);
+  left: 12px;
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+  outline: 1px solid olive;
+  /*z-index: 2;*/
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .agree-check-block {
   margin-top: 0;
@@ -905,6 +922,7 @@ img {
   height: 40px;
   border-radius: 4px;
   background-color: transparent;
+  outline: none;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -1038,17 +1056,4 @@ img {
 .footer-submit-button:hover .footer-submit-icon,
 .footer-submit-button:focus .footer-submit-icon {
   fill: var(--whitetxt);
-}
-
-.form-label .person-name-icon {
-  position: relative;
-  /*position: absolute;*/
-  top: 0;
-  left: 0;
-  width: 18px;
-  height: 18px;
-  fill: olivedrab; /*currentColor;*/
-  outline: 1px solid olive;
-  z-index: 2;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
