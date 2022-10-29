@@ -486,19 +486,30 @@
         </p-->
         <!-- autocomplete="on" novalidate-->
         <form class="main-form" action="#" name="contact-form">
-          <label class="form-label" for="person-name">Ім'я</label>
-          <input class="form-input" id="person-name" type="text" name="person-name" />
-          <label class="form-label" for="person-phone">Телефон</label>
-          <input class="form-input" id="person-phone" type="tel" name="person-phone" />
-          <label class="form-label" for="person-email">Пошта</label>
-          <input class="form-input" id="person-email" type="email" name="person-email" />
-          <label class="form-label" for="person-comment">Коментар</label>
-          <textarea
-            class="person-comment"
-            id="person-comment"
-            name="person-comment"
-            placeholder="Введіть текст"
-          ></textarea>
+          <label class="form-label" for="person-name"
+            >Ім'я
+            <input class="form-input" id="person-name" type="text" name="person-name" />
+            <svg class="person-name-icon">
+              <use href="./images/symbol-defs-opt.svg#icon-person-black-18dp1-opt"></use>
+            </svg>
+          </label>
+          <label class="form-label" for="person-phone"
+            >Телефон
+            <input class="form-input" id="person-phone" type="tel" name="person-phone" />
+          </label>
+          <label class="form-label" for="person-email"
+            >Пошта
+            <input class="form-input" id="person-email" type="email" name="person-email" />
+          </label>
+          <label class="form-label" for="person-comment"
+            >Коментар
+            <textarea
+              class="person-comment"
+              id="person-comment"
+              name="person-comment"
+              placeholder="Введіть текст"
+            ></textarea>
+          </label>
           <div class="agree-check-block">
             <!--visually-hidden-->
             <input
