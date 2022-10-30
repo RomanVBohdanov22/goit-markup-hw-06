@@ -951,7 +951,7 @@ img {
   top: 0;
   left: 0;
   width: 16px;
-  height: 16px;
+  height: 15px;
   border: 2px solid var(--fontblack);
   border-radius: 2px;
   content: '';
@@ -961,7 +961,7 @@ img {
   top: 0;
   left: 0;
   width: 16px;
-  height: 16px;
+  height: 15px;
   /*border: 1px solid orange;*/
   border: none;
   /*background-image: url(../images/icons.swg#icon-vector-check-opt);*/
@@ -973,6 +973,12 @@ img {
 }
 
 .agree-label-checkbox:checked + .agree-label ::after {
+  /*opacity: 1;*/
+  /*font-weight: 500;*/
+  outline: 1px dotted var(--bluebtn);
+  background-image: url(../images/icons.swg#icon-vector-check-opt);
+}
+.agree-label-checkbox:focus + .agree-label ::after {
   opacity: 1;
   /*font-weight: 500;*/
 }
