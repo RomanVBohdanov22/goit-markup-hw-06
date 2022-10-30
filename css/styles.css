@@ -952,7 +952,7 @@ img {
   left: 0;
   width: 16px;
   height: 16px;
-  border: 1px solid gray;
+  border: 2px solid var(--fontblack);
   border-radius: 2px;
   content: '';
 }
@@ -962,9 +962,11 @@ img {
   left: 0;
   width: 16px;
   height: 16px;
-  border: 1px solid orange;
+  /*border: 1px solid orange;*/
+  border: none;
   /*background-image: url(../images/icons.swg#icon-vector-check-opt);*/
-  border-radius: 50%;
+  border-radius: 2px;
+  background-color: var(--bluebtn);
   opacity: 0;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   content: '';
@@ -1072,8 +1074,12 @@ img {
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: var(--whitetxt);
+  outline: none;
   border: 1px solid var(--color-input-border);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-form-input:focus {
+  border-color: var(--bluebtn);
 }
 .footer .footer-submit-button {
   /*position: relative;*/
