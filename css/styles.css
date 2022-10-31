@@ -973,10 +973,17 @@ img {
   height: 15px;
   border: 2px solid var(--fontblack);
   border-radius: 2px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .agree-label-checkbox:checked + .agree-alt-checkbox {
-  background-color: orange;
+  background-color: var(--bluebtn);
+  border-color: var(--bluebtn);
+  background-image: url(../images/icons.swg#icon-vector-check-opt);
+  background-size: contain;
+  background-origin: border-box;
 }
+
 /*
 .agree-label::before {
   position: absolute;
