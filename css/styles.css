@@ -979,7 +979,7 @@ img {
 .agree-label-checkbox:checked + .agree-alt-checkbox {
   background-color: var(--bluebtn);
   border-color: var(--bluebtn);
-  background-image: url(../images/icons.swg#icon-vector-check-opt);
+  background-image: url(../images/v-check-opt.svg);
   background-size: contain;
   background-origin: border-box;
 }
