@@ -959,9 +959,9 @@ img {
   padding-left: 24px;
 }
 .agree-check-block .agree-label-checkbox {
-  /*-webkit-appearance: none;
+  -webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none;*/
+  appearance: none;
 }
 
 .agree-label ::before {
