@@ -983,7 +983,10 @@ img {
   background-size: contain;
   background-origin: border-box;
 }
-
+.agree-label-checkbox:focus + .agree-alt-checkbox {
+  border-color: var(--bluebtn);
+  background-size: contain;
+}
 /*
 .agree-label::before {
   position: absolute;
