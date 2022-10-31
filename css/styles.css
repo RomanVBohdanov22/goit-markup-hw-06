@@ -1059,6 +1059,7 @@ img {
   border-color: var(--greybtbn);
   border-radius: 50%;
   background-color: transparent; /*var(--close-btn-transp);*/
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: inline-block;
   display: flex;
   align-items: center;
@@ -1068,6 +1069,16 @@ img {
   fill: currentColor;
   width: 18px;
   height: 18px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal .modal-close-button:hover,
+.modal .modal-close-button:focus {
+  background-color: var(--bluebtn);
+}
+
+.modal .modal-close-button:hover .modal-close-button-icon,
+.modal .modal-close-button:focus .modal-close-button-icon {
+  fill: var(--whitetxt);
 }
 
 .concern {
