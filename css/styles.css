@@ -944,7 +944,7 @@ img {
   display: flex;
   flex-direction: row;
   outline: none;
-  /*gap: 8px;*/
+  gap: 8px;
 }
 .modal .agree-label {
   /*font-size: 12px;*/
@@ -957,6 +957,8 @@ img {
   padding-left: 24px;
 }
 .agree-label-checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
 }
 
@@ -1000,19 +1002,24 @@ img {
   font-weight: 500;
 }*/
 .modal .agree-label-link {
-  font-size: inherit;
+  /*font-size: inherit;
   font-family: inherit;
   font-weight: inherit;
   line-height: inherit;
-  letter-spacing: inherit;
+  letter-spacing: inherit;*/
+  position: relative;
+  color: var(--fontcolordescrp);
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  /*padding-left: 8px;*/
   color: var(--bluebtn);
   outline: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal .agree-label-link:hover,
+/*.modal .agree-label-link:hover,
 .modal .agree-label-link:focus {
   color: var(--icons-social-grey);
-}
+}*/
 
 /*.modal .modal-text {
   position: relative;
